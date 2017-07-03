@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <title>Hangman Game</title>
+  <meta charset="UTF-8">
+  <meta name="author" content="Nan Loyd-Leffingwell" />
+  <meta name="description" content="My second Javascript" />
+  <meta name="classification" content="game" />
+  <meta name="copyright" content="&copy; 2017 Nan Loyd-Leffingwell" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+	<div class="jumbotron">
+		<div class="container">
+			<h1>The Hangman Game</h1>
+			<p>Put instructions for how to play the game here.</p>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<h2>Question</h2>
+					<p><span id="question"></span></p>
+				</div>
+				<div class="col-md-6">
+					<h2>Answer</h2>
+					<p><span id="answer"></span></p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<h3>Incorrect Guesses</h3>
+					<p><span id="incorrectGuesses"></span></p>
+				</div>
+				<div class="col-md-6">
+					<h3>Correct Guesses</h3>
+					<p><span id="correctGuesses"></span></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+</html>
