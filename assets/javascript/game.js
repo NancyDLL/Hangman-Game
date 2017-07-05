@@ -39,15 +39,30 @@ document.getElementById("start").addEventListener("click", function() {
 			break;
 	}
 	console.log("The picked answer is ", pickedAnswer);
-	//For every letter of the answer display underscores (somehow length will be used)
-});
+	//find the length of the array item 
+	var undScoreCount=pickedAnswer.length;
+	console.log("The number of letters are ", undScoreCount);
+	//generate that number of "_ "
+	
+	//display those underscores in #answer
+	//document.querySelector('#answer').innerHTML = ;
 
+	//User selects a letter and letter is compared against the answer for the question
+	document.onkeyup = function(){
+		var userGuess = String.fromCharCode(event.keyCode).toLowerCase();
+		console.log("The User guessed " + userGuess);
+		}
+		//and letter is compared against the answer for the question
+		//if (userGuess == pickedAnswer){
 
-
-
-//User selects a letter and letter is compared against the answer for the question
+		//}
 //If correct display letter in correct position (will I need to store each in an array or can array relate to each other in some way?)
 //If incorrect display letter in the incorrectGuesses ID
+});
+
+//build a function that compares the letter selection against the letters in the array item
+
+
 
 //Display a win or loss and reset guesses left after each round.
 document.querySelector('#winDisplay').innerHTML = wins;
